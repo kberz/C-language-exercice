@@ -9,7 +9,7 @@ int main()
     int retry = 0;
     int mode_jeu;
     int difficulter;
-    printf("Vous avez le choix entre trois types de difficultés\n1-Facile : Nombre mystère de 0 à 100\n2-Difficile : Nombre mystère de 0 à 1000\n3-Très difficile : Nombre mystère de 0 à 10 000\n");
+    printf("Vous avez le choix entre trois types de difficultés:\n1-Facile : Nombre mystère de 0 à 100\n2-Difficile : Nombre mystère de 0 à 1000\n3-Très difficile : Nombre mystère de 0 à 10 000\n");
     scanf("%d", &difficulter);
     int nombreMystere;
 
@@ -18,6 +18,7 @@ int main()
         int MAX = 100, MIN = 1;
         srand(time(NULL));
         nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+        printf("Vous avez choisis le mode de difficulté niveau 1.\nLes nombres vont de 0 à %d\n", MAX);
         }
 
     if (difficulter == 2)
@@ -26,6 +27,7 @@ int main()
         int MAX = 1000, MIN = 1;
         srand(time(NULL));
         nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+        printf("Vous avez choisis le mode de difficulté niveau 2.\nLes nombres vont de 0 à %d\n", MAX);
         }
 
     if (difficulter == 3)
@@ -33,9 +35,12 @@ int main()
         int MAX = 10000, MIN = 1;
         srand(time(NULL));
         nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
+        printf("Vous avez choisis le mode de difficulté niveau 3.\nLes nombres vont de 0 à %d\n", MAX);
         }
+
+
         //Séléction mode de jeu solo ou duo
-        printf("1-Mode solo \n2-Mode duo\n");
+        printf("Vous pouvez choisir votre mode de jeu:\n1-Mode solo \n2-Mode duo\n");
         scanf("%d", &mode_jeu);
 
         switch(mode_jeu)

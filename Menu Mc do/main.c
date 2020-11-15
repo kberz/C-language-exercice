@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     printf("Vous avez bien choisi le Mc César\n");
     break;
     default:
-    printf("T'es con ou quoi j'ai dis entre 1 et 4 il n'y a rien de compliqué...");
+    printf("Il faut choisir entre 1 et 4 il n'y a rien de compliqué...");
     break;
     }
 

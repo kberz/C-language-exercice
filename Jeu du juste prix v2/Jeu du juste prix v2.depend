@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605431064 source:/home/karl/Projet perso/Projet C/Jeu du juste prix v2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
